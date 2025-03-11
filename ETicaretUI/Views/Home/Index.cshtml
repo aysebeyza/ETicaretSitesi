@@ -1,0 +1,16 @@
+﻿@using ETicaretData.Entities
+@model IEnumerable<Product>
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<header>
+    <div class="container py-2">
+        <h1>ETicaret Sitesi Demo</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt dui non suscipit laoreet. Suspendisse vitae libero id odio sodales rhoncus sit amet vitae velit. Sed rutrum pulvinar magna at tempor. Duis sed ornare purus, at varius enim. Cras non pretium odio. Sed dui ex, porta nec orci eget, efficitur placerat tortor. Sed commodo urna eget libero efficitur, vel porta tortor bibendum. Aliquam rutrum sit amet ligula at vestibulum. In maximus augue sed neque mollis tristique. Aenean neque nisi, ornare in magna commodo, cursus ullamcorper quam. Fusce ac tincidunt odio, laoreet venenatis sapien.</p>
+    </div>
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+        @Html.Partial("_ProductList", Model)
+    </div>
+</header>
